@@ -7,11 +7,17 @@ with the data store. The data store will support the following functional requir
 # Languages:
 Ideally, we would not restrict you from working on a language of your choice. However, it would be preferable if you stick with one of these -
 • NodeJS
+
 • Java
+
 • Python
+
 • GoLang
+
 • Ruby
+
 • C/C++
+
 # Submission:
 Submit a link to the source code, ideally committed to Github.
 Code accompanied by thorough unit tests is typically a mark of quality work.
