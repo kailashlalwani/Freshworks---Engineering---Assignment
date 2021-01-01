@@ -47,3 +47,14 @@ def updatedata(key,value):
             l.append(b[1])
             database[key]=l
             print("Value for",key,"updated to",value)
+            
+            
+            
+# In run.py script file used: -
+
+#lets UPDATE data
+run.updatedata("Kailash",23)
+#Value for Kailash updated to 23
+res = run.readdata("Kailash")
+print(res)
+#Kailash:23
