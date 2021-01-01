@@ -23,38 +23,3 @@ Ideally, your data store will work on most operating systems. If this is not the
 
 
 
-## Importent Note: - We can Perform Update Operation By using Updatedata(key, value)    i.e : -
-
-def updatedata(key,value):
-    b=database[key]
-    if b[1]!=0:
-        if time.time()<b[1]:
-            if key not in database:
-                print("Error: given key does not exist in database. Please enter a valid key") #error message6
-            else:
-                l=[]
-                l.append(value)
-                l.append(b[1])
-                database[key]=l
-        else:
-            print("Error: time-to-live of",key,"has expired") #error message5
-    else:
-        if key not in database:
-            print("Error: Key does not exist in database. Please enter a valid key") #error message6
-        else:
-            l=[]
-            l.append(value)
-            l.append(b[1])
-            database[key]=l
-            print("Value for",key,"updated to",value)
-            
-            
-            
-# In run.py script file used: -
-
-#lets UPDATE data
-run.updatedata("Kailash",23)
-#Value for Kailash updated to 23
-res = run.readdata("Kailash")
-print(res)
-#Kailash:23
